@@ -1,0 +1,6 @@
+.mainboard {
+  display: flex;
+  padding-top: 15px;
+  width: 1000%;
+  background-color: teal;
+}
