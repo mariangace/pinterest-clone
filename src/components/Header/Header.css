@@ -22,6 +22,9 @@
   cursor: pointer;
 }
 
+.header__search {
+  flex: 1;
+}
 .header__button {
   display: flex;
   height: 48px;
@@ -29,23 +32,27 @@
   align-items: center;
   justify-content: center;
   border-radius: 24px;
-  color: black;
-  background-color: transparent;
+  background-color: rgb(17, 17, 17);
   cursor: pointer;
 }
-.header__button:hover {
-  background-color: gainsboro;
-}
-.header__button:active {
-  background-color: rgb(17, 17, 17);
-}
-
-.header__button > a {
+.homePage > a {
   text-decoration: none;
+  color: white;
+  font-weight: 700;
 }
 
-.header__search {
-  flex: 1;
+.following {
+  background-color: white;
+}
+
+.following:hover {
+  background-color: #e1e1e1;
+}
+
+.following > a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
 }
 
 .header__searchContainer {

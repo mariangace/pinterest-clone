@@ -1,10 +1,18 @@
 import React from 'react';
-import Pin from '../Pin/Pin'
+import Pin from '../Pin/Pin';
+import './Mainboard.css';
 
-function Mainboard() {
+function Mainboard({pinsData}) {
+    
     return (
         <div className="mainboard">
-           <Pin />
+            {pinsData && pinsData.map((pin,index) => {
+             return (
+                <Pin key={index} alt={pin.alt} img={pin.urls && pin.urls.regular}/>
+             )
+            }
+            )}
+           
         </div>
     )
 }

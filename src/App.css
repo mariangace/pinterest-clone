@@ -16,8 +16,9 @@ body {
   align-items: center;
 }
 
-.app_body {
+.app__body {
   background-color: white;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }

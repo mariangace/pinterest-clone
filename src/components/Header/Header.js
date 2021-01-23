@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import PinterestIcon from '@material-ui/icons/Pinterest';
 import IconButton from '@material-ui/core/IconButton';
@@ -6,9 +6,23 @@ import FaceIcon from '@material-ui/icons/Face';
 import TextsmsIcon from '@material-ui/icons/Textsms';
 import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import SearchIcon from '@material-ui/icons/Search';
+import db from '../../firebase';
 import './Header.css';
 
-function Header() {
+function Header({onSearch}) {
+    const [input, setInput] = useState(""); 
+
+    const onSearchSubmit = (e) => {
+            e.preventDefault();
+            db.collection("terms").add({
+                term:input
+            })
+            if(input.length > 3){
+                //call endpoint 
+                onSearch(input);
+            }
+        }
+
     return (
         <div className="app_header">
             <div className="header__wrapper">
@@ -31,8 +45,8 @@ function Header() {
                     <div className="header__searchContainer">
                         <SearchIcon/>
                         <form>
-                            <input type="text" />
-                            <button>
+                            <input type="text" onChange={(e)=> setInput(e.target.value)}/>
+                            <button type="submit" onClick={onSearchSubmit}>
                                 Submit
                             </button>
                     </form>
