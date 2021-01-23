@@ -1,4 +1,4 @@
-.pin {
+/* .pin {
   height: fit-content;
 }
 
@@ -25,4 +25,10 @@
   cursor: zoom-in;
   border-radius: 16px;
   object-fit: cover;
+} */
+
+/* adding pinterest sytle css */
+.grid-gallery__image {
+  cursor: zoom-in;
+  border-radius: 16px;
 }

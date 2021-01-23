@@ -5,14 +5,13 @@ import './Mainboard.css';
 function Mainboard({pinsData}) {
     
     return (
-        <div className="mainboard">
+        <div className="grid-gallery ">
             {pinsData && pinsData.map((pin,index) => {
              return (
                 <Pin key={index} alt={pin.alt} img={pin.urls && pin.urls.regular}/>
              )
             }
             )}
-           
         </div>
     )
 }

@@ -14,11 +14,7 @@ function App() {
       let searchedPins = [];
       promises.push(
         search(term).then((res)=> {
-          let r = (res.data.results);
-          searchedPins = r
-          // r.map((pin)=> {
-           // searchedPins.push(pin);
-          //})
+          searchedPins = (res.data.results);
         })
       );
       Promise.all(promises).then(()=> {

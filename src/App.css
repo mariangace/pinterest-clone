@@ -6,19 +6,13 @@ body {
   background-color: white;
 }
 
-.app_header {
-  flex: 1 1 auto;
-  height: 80px;
-  background-color: white;
-  justify-content: center;
-  padding: 12px 4px 4px 16px;
-  box-sizing: border-box;
-  align-items: center;
-}
-
 .app__body {
-  background-color: white;
+  /* background-color: white;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  max-width: 1500px;
+  margin: auto;
+  background-color: white;
+  padding: 100px 20px;
 }

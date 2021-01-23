@@ -24,7 +24,6 @@ function Header({onSearch}) {
         }
 
     return (
-        <div className="app_header">
             <div className="header__wrapper">
                 <div className="header__logo">
                     <IconButton>
@@ -67,7 +66,6 @@ function Header({onSearch}) {
                     </IconButton>                    
                 </div>
             </div>
-        </div>
     )
 }
 

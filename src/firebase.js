@@ -3,7 +3,7 @@
   // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   var firebaseConfig = {
-    apiKey: "AIzaSyB2PlBmGmdd71oSu4RG4s6upUat6iqfFlA",
+    apiKey: process.env.REACT_APP_DB_KEY,
     authDomain: "pinterest-clone-3d680.firebaseapp.com",
     projectId: "pinterest-clone-3d680",
     storageBucket: "pinterest-clone-3d680.appspot.com",
@@ -12,6 +12,7 @@
     measurementId: "G-9G7B68M4MH"
   };
 
+  console.log(firebaseConfig)
   const firebaseApp = firebase.initializeApp(firebaseConfig);
 
   const db = firebaseApp.firestore();
