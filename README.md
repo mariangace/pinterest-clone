@@ -2,6 +2,14 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Pinterest Clone
+
+Hi there! This projects recreates a pinterest dashboard.
+
+I'm using firebase to keep record of searched terms and unsplash API to get the beautiful images.
+
+![alt pinterest-clone]('pinterest-clone.png')
+
 ## Available Scripts
 
 In the project directory, you can run:
