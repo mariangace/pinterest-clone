@@ -8,7 +8,7 @@ Hi there! This projects recreates a pinterest dashboard.
 
 I'm using firebase to keep record of searched terms and unsplash API to get the beautiful images.
 
-![alt pinterest-clone]('pinterest-clone.png')
+![alt pinterest-clone](https://github.com/mariangace/pinterest-clone/blob/master/public/pinterest-clone.png?raw=true)
 
 ## Available Scripts
 
